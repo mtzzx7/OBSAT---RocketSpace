@@ -7,19 +7,6 @@ Funcionalidades:
 - Processamento de branqueamento com bleach_detector (mono ou bi-temporal).
 - Telemetria via HTTP (Wi-Fi): bateria, temperatura, IMU (gyro/accel), payload.
 - Envio por 2 horas, em intervalos de 4 minutos, com payload ≤ 90 bytes.
-
-Execução:
-    python cubesat_main.py
-
-Configuração:
-- Edite config.json para colocar o endpoint do servidor de testes e IDs.
-- Conecte-se ao Wi-Fi previamente (fora do script) ou adicione um gerenciador.
-
-Observações:
-- Em voo estratosférico (30 km), a câmera registra a superfície; para validar
-  branqueamento, use alvos de referência (padrões/carta CoralWatch) em solo.
-- Este script foi desenhado para Raspberry Pi ou SBC similar. Ajuste os drivers
-  dos sensores conforme seu hardware.
 """
 import os
 import time

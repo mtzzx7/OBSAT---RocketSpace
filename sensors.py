@@ -1,12 +1,9 @@
 
 """Leitura de sensores: bateria, temperatura, IMU.
-
 Ajuste conforme seu hardware:
 - Bateria: ADC (ex.: MCP3008) ou medidor externo via I2C/UART.
 - Temperatura: termistor, DS18B20, ou CPU como proxy.
 - IMU: MPU6050/BNO055 via I2C.
-
-Se não houver sensores, retornos simulados para não quebrar a missão.
 """
 import os
 import time

@@ -1,23 +1,3 @@
-
-# bleach_detector.py
-"""
-Bleach Detector — módulo headless para estimar branqueamento de corais.
-
-Funciona com uma ou duas imagens (pré e pós-evento) e retorna métricas de
-branqueamento por tile, além de um mapa binário de pixels 'branqueados'.
-
-Requisitos: numpy, opencv-python (cv2), pillow (opcional para salvar outputs).
-
-Observações importantes para uso em CubeSat / demonstração:
-- Em imagens subaquáticas: idealmente corrigir balanço de branco e atenuação da
-  coluna d'água (não implementado aqui; este módulo foca em processamento rápido).
-- Em imagens aéreas/satélites: recomenda-se detecção por mudança (bi-temporal),
-  com normalização radiométrica (PIF/histogram matching). Implementamos uma
-  normalização simples baseada em estatísticas globais por canal.
-
-Autor: Adaptado a partir de main.py enviado pelo usuário (CIEDE2000 e conversões).
-"""
-
 import math
 import numpy as np
 import cv2
