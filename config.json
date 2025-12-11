@@ -1,0 +1,15 @@
+
+{
+  "satellite_id": "SAT-001",
+  "team_id": "TEAM-OBSAT-XX",
+  "mission_id": "BLEACH-01",
+  "endpoint_url": "http://127.0.0.1:8000/telemetry",
+  "http_timeout": 10,
+  "duration_minutes": 120,
+  "interval_minutes": 4,
+  "camera_index": 0,
+  "image_width": 1280,
+  "image_height": 720,
+  "use_change_mode": true,
+  "output_dir": "data"
+}
